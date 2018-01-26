@@ -6,15 +6,21 @@
        <title>Rango</title>
    </head>
    <body>
-      <h1>About Rango</h1>
+      <h1>Rango says here is the about page</h1>
       <div>
-      <strong>Rango says here is the about page</strong><br/>
+           here is the about page!<br />
+           <strong>{{ boldmessage }}</strong><br />
+      <div>
       This tutorial has been put by Martin Dimitrov.
       </div>
     
       <div>
       <a href="/rango/">Index</a><br />
-      <img src = "{{ MEDIA_URL}}cat.jpg"
+      <img src="{% static "images/cat.jpg"%}"
+                    alt = "Picture of Cat" />
+      </div>
+      <div>
+      <img src="{{ MEDIA_URL}}cat.jpg"
                     alt = "Picture of a Cat" />
       </div>
     </body>
