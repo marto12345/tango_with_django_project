@@ -2,17 +2,20 @@
 {% load staticfiles %}
 
 <html>
-
-    <h1>About Rango</h1>
-    <div>
-    <strong>Rango says here is the about page</strong><br/>
-    This tutorial has been put by Martin Dimitrov.
-    </div>
+   <head>
+       <title>Rango</title>
+   </head>
+   <body>
+      <h1>About Rango</h1>
+      <div>
+      <strong>Rango says here is the about page</strong><br/>
+      This tutorial has been put by Martin Dimitrov.
+      </div>
     
-    <div>
-    <a href="/rango/">Index</a><br />
-    <img src = "{{ MEDIA_URL}}cat.jpg"
+      <div>
+      <a href="/rango/">Index</a><br />
+      <img src = "{{ MEDIA_URL}}cat.jpg"
                     alt = "Picture of a Cat" />
-    </div>
-
+      </div>
+    </body>
 </html>
