@@ -1,10 +1,8 @@
-<!DOCTYPE html>
 {% extends 'rango/base.html' %}
 {% load staticfiles %}
-<html>
 
 {% block body_block %}
-
+    <p>visits: {{ visits }}<p>
     <h1>Rango says...</h1>
     {% if user.is_authenticated %}
         howdy {{ user.username }}!
@@ -46,4 +44,3 @@
     </div>
 
 {% endblock %}
-</html>
